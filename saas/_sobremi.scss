@@ -1,0 +1,99 @@
+/* --------SOBRE MI--------*/
+/* -----------------------*/
+/*Presentacion*/
+/*Presentacion SOBRE MI*/
+#presentacion{
+   width: 100%;
+   justify-content: center;
+   padding: 15px;
+}
+
+#presentacion_texto{
+   display:flex;
+   flex-direction: column;
+   background-color: #a27e70;
+}
+
+#presentacion_texto{ 
+   h1{
+   color:black;
+   opacity: 0.8;
+   font-family: 'Overlock', cursive;
+   font-size: 70px;
+   margin-top: 60px;
+   margin-left: 15px;
+   }
+}
+
+#presentacion_texto{
+   p{
+   font-family: 'Overlock', cursive;
+   font-size: 20px;
+   text-align: justify;
+   align-self: center;
+   padding: 10px;
+   margin: 10px;
+   }
+}
+
+#presentacion_img{
+   padding: 0px;
+   text-align: right;
+   background-color: #a27e70;
+}
+
+ /*Proverbio SM*/
+ 
+ .proverbio_sm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #91BC52;
+    padding: 10px;
+    margin-bottom: 100px;
+ }
+ 
+ .proverbio_sm{
+    p{
+    font-family: 'Overlock SC', cursive;
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    margin: 0px;
+    }
+ }
+ 
+ .proverbio_sm{
+    h3{
+    font-family: 'Overlock', cursive;
+    font-size: 28px;
+    text-align: justify;
+    align-self: center;
+    }
+ }
+ 
+ 
+ /*Mosaico de CARDS*/
+ 
+ #foto1{
+    height: 300px;
+ }
+ #sahumerio{
+    height: 600px;
+ }
+ .card-columns{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ 
+ .card.title{
+    font-family:'Overlock', cursive;
+    font-size: 28px;
+ }
+ 
+ .card.text{
+    font-family:'Overlock', cursive;
+    font-size: 17px;
+ }

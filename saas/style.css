@@ -1,0 +1,635 @@
+@charset "UTF-8";
+/* RESET*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BODY*/
+body {
+  background-color: #FBF2EF;
+}
+
+/* HEADER*/
+.encabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1%;
+}
+
+.encabezado h1 {
+  color: #a27e70;
+  font-family: 'Overlock', cursive;
+  font-size: 70px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  padding: 25px;
+}
+
+.encabezado img {
+  width: 15%;
+  height: 15%;
+  margin-top: 20px;
+  border-radius: 50%;
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+  /*Animacion APARECER logo*/
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Barra de navegacion de BS*/
+.nav-link {
+  color: rgba(250, 250, 250, 0.8);
+  font-weight: 600;
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #fafafa;
+}
+
+.dropdown-menu {
+  color: rgba(250, 250, 250, 0.8);
+  font-weight: 600;
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+}
+
+/*---------------------
+  Footer
+-----------------------*/
+/*
+footer {
+    background-color: #a27e70;
+    font-family: 'Overlock', cursive;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+    width: 100%;
+    height: 100px;
+    color: black;
+    margin-top: 0px;
+  }
+  */
+.footer {
+  background: #a27e70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-links a {
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+/* --------PAGINA DE INICIO / HOME--------*/
+/*Seccion destacado*/
+#destacado {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #91BC52;
+}
+
+#destacado p {
+  font-family: 'Overlock', cursive;
+  font-size: 35px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15px;
+}
+
+#destacadoimg {
+  background-size: cover;
+  padding: 0px;
+}
+
+#atrapasueños {
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+}
+
+/*Seccion INTRO*/
+#intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 70px;
+}
+
+#intro img {
+  width: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 40px;
+  border-radius: 5%;
+}
+
+#intro p {
+  font-family: 'Overlock', cursive;
+  font-size: 22px;
+  text-align: center;
+}
+
+/*BUTTON*/
+.btn-flat {
+  color: rgba(250, 250, 250, 0.8);
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+  width: 25%;
+  min-width: 180px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 8px 24px;
+  margin-top: 40px;
+  border-radius: 20px;
+  background: #a27e70;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+/* --------SOBRE MI--------*/
+/* -----------------------*/
+/*Presentacion*/
+/*Presentacion SOBRE MI*/
+#presentacion {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+#presentacion_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a27e70;
+}
+
+#presentacion_texto h1 {
+  color: black;
+  opacity: 0.8;
+  font-family: 'Overlock', cursive;
+  font-size: 70px;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+#presentacion_texto p {
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+#presentacion_img {
+  padding: 0px;
+  text-align: right;
+  background-color: #a27e70;
+}
+
+/*Proverbio SM*/
+.proverbio_sm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #91BC52;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+
+.proverbio_sm p {
+  font-family: 'Overlock SC', cursive;
+  font-size: 40px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+  margin: 0px;
+}
+
+.proverbio_sm h3 {
+  font-family: 'Overlock', cursive;
+  font-size: 28px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*Mosaico de CARDS*/
+#foto1 {
+  height: 300px;
+}
+
+#sahumerio {
+  height: 600px;
+}
+
+.card-columns {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card.title {
+  font-family: 'Overlock', cursive;
+  font-size: 28px;
+}
+
+.card.text {
+  font-family: 'Overlock', cursive;
+  font-size: 17px;
+}
+
+/* --------AYURVEDA--------*/
+/* CONTAINER*/
+.container-fluid {
+  height: 100%;
+  padding: 0px;
+  width: 100%;
+}
+
+/*Seccion AYUR*/
+#ayur_titulo {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  background-color: #FBF2EF;
+}
+
+#ayur_titulo h1 {
+  font-family: "Overlock", cursive;
+  font-size: 80px;
+  font-size: 4rem;
+  margin-top: 50px;
+}
+
+#ayur {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #FBF2EF;
+}
+
+#ayur_p {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15px;
+}
+
+#ayur_p p {
+  margin-left: 50px;
+}
+
+#ayur_img {
+  background-size: cover;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+#ayur_img:hover {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+/*Beneficios*/
+#beneficios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  background: #E8B39E;
+  margin-top: 50px;
+}
+
+#beneficios h2 {
+  font-family: "Overlock", cursive;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+#beneficios P {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+}
+
+#beneficios ul {
+  margin-left: 30px;
+  list-style-type: square;
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#beneficios:hover {
+  -webkit-filter: drop-shadow(8px 8px 10px gray);
+          filter: drop-shadow(8px 8px 10px gray);
+}
+
+/*Proverbio*/
+.proverbio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #91BC52;
+  padding: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.proverbio p {
+  font-family: "Overlock SC", cursive;
+  font-size: 40px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15px;
+}
+
+.proverbio h3 {
+  font-family: "Overlock", cursive;
+  font-size: 28px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*Seccion NUTRICION AYURVEDA*/
+#nutri_titulo {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+  background-color: #FBF2EF;
+}
+
+#nutri_titulo h1 {
+  font-family: "Overlock", cursive;
+  font-size: 80px;
+  font-size: 4rem;
+}
+
+#nutricion {
+  width: 100%;
+  background-color: #FBF2EF;
+}
+
+#nutri_texto {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nutri_texto p {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+  padding-left: 0px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+#nutri_texto ul {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nutricion img {
+  width: 70%;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 50%;
+  margin: 20px;
+  margin-left: 100px;
+}
+
+/*--------SECCION CONSULTAS-----------*/
+/*------------------------------------*/
+/*Seccion Consultorio*/
+#consultorio {
+  width: 100%;
+  background-color: #FBF2EF;
+  margin-top: 50px;
+}
+
+#consultorio img {
+  width: 70%;
+  border-radius: 20px;
+  padding: 15px;
+  margin-left: 120px;
+  text-align: center;
+}
+
+#consultorio h1 {
+  font-family: "Overlock", cursive;
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+#consultorio p {
+  font-family: "Overlock", cursive;
+  font-size: 25px;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+
+#consultorio #texto {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+}
+
+#consultorio ul {
+  font-family: "Overlock", cursive;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+#consultorio img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/*ATENCION PERSONALIZADA*/
+.atencion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #91BC52;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.atencion p {
+  font-family: "Overlock SC", cursive;
+  font-size: 25px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 15px;
+}
+
+.atencion h3 {
+  font-family: "Overlock", cursive;
+  font-size: 30px;
+  text-align: justify;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+/*--------SECCION CONTACTO-----------*/
+/*------------------------------------*/
+/*Contenedor*/
+#contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */

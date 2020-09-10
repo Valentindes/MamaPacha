@@ -1,0 +1,169 @@
+/* --------AYURVEDA--------*/
+
+/* CONTAINER*/
+.container-fluid {
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+  }
+
+/*Seccion AYUR*/
+#ayur_titulo{
+    width: 100%;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    background-color: $primary_color;
+}
+
+#ayur_titulo{
+    h1{
+    font-family: $font_principal;
+    font-size: 80px;
+    font-size: 4rem;
+    margin-top: 50px;
+    }
+}
+
+#ayur{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary_color;
+  }
+
+#ayur_p{
+    font-family: $font_principal;
+    font-size: 20px;
+    text-align: justify;
+    align-self: center;
+    padding: 15px;
+  }
+
+  #ayur_p p{
+    margin-left: 50px;
+  }
+  
+  #ayur_img{
+    background-size: cover;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+  }
+  	
+  #ayur_img:hover {filter: blur(2px);}
+
+/*Beneficios*/
+
+#beneficios{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  background: #E8B39E;
+  margin-top: 50px;
+}
+
+#beneficios h2{
+  font-family: $font_principal;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+#beneficios P{
+  font-family: $font_principal;
+  font-size: 20px;
+  text-align: justify;
+  padding: 15px;
+}
+
+#beneficios ul{
+  margin-left: 30px;
+  list-style-type: square;
+  font-family: $font_principal;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#beneficios:hover {filter: drop-shadow(8px 8px 10px gray);}
+
+/*Proverbio*/
+
+.proverbio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $third_color;
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.proverbio p{
+    font-family: $font_2;
+    font-size: 40px;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+}
+
+.proverbio h3{
+    font-family: $font_principal;
+    font-size: 28px;
+    text-align: justify;
+    align-self: center;
+}
+
+/*Seccion NUTRICION AYURVEDA*/
+#nutri_titulo{
+    width: 100%;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    background-color: $primary_color;
+}
+
+#nutri_titulo h1{
+    font-family: $font_principal;
+    font-size: 80px;
+    font-size: 4rem;
+}
+
+#nutricion{
+    width: 100%;
+    background-color:$primary_color;
+  }
+
+#nutri_texto{
+    justify-content: center;
+}
+
+#nutri_texto p{
+    font-family: $font_principal;
+    font-size: 20px;
+    text-align: justify;
+    padding: 15px;
+    padding-left: 0px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+
+#nutri_texto ul{
+    font-family: $font_principal;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+#nutricion img{
+    width: 70%;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-left: 100px;
+  }
