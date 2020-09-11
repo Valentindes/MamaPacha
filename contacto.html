@@ -39,56 +39,62 @@
             </div>
         </header>
     
-        <nav class="navbar navbar-expand" style="background-color:#a27e70;">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav mr-auto">
-                 <li class="nav-item active">
-                   <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
-                 </li>
-                 <li class="nav-item active">
-                   <a class="nav-link" href="sobre_mi.html">Sobre mi</a>
-                 </li>
-                 <li class="nav-item dropdown active">
-                   <a class="nav-link dropdown-toggle" href="ayurveda.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Ayurveda</a>
-                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="ayurveda.html">¿Que es el Ayurveda?</a>
-                     <a class="dropdown-item" href="ayurveda.html">Alimentación Ayurveda</a>
-                   </div>
-                 </li>
-                 <li class="nav-item active">
-                   <a class="nav-link" href="consultas.html">Consultas</a>
-                 </li>
-                 <li class="nav-item active">
-                   <a class="nav-link" href="contacto.html">Contacto</a>
-                 </li>
-               </ul>
-           </div>
-        </nav>
-       
-       <section class="container" id="formulario">
-            <h3 class="text-uppercase text-center mt-5">Contacto</h3>
-            <p class="lead text-center">Ante cualquier consulta podes contactarme al correo electronico mamapacha@gmail.com 
-            o enviar un whatsapp al +54-154xxxxxx</p>
-            <div class= "row">
-                <div class="col-6">
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="">Nombre</label>
-                                <input type="text" class="form-control"  placeholder="Escribe tu nombre aqui">
-                            </div>
-                            <div class="form-group">
-                                <label for="">E-mail</label>
-                                 <input type="e-mail" class="form-control"  placeholder="Escribe tu e-mail aqui">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Comentarios</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Escribe aqui tus comentarios</textarea>
-                            </div>
+    <!-- Barra de navegacion Responsive -->
+    <nav class="navbar navbar-expand-lg" style="background-color:#a27e70;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="dark-blue-text"><i
+          class="fas fa-bars fa-1x"></i></span>
+      </button>
 
-                            <div class="form-group">
-                                <button class="btn btn-primary mb-5 border-0" style="background:#91BC52">Enviar</button>
-                            </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="sobre_mi.html">Sobre mi</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="ayurveda.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ayurveda</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ayurveda.html">¿Que es el Ayurveda?</a>
+              <a class="dropdown-item" href="ayurveda.html">Alimentación Ayurveda</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="consultas.html">Consultas</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+  </nav>
+    
+     <!-- Formulario -->
+    <section class="container" id="formulario">
+      <h3 class="text-uppercase text-center mt-5">Contacto</h3>
+      <p class="lead text-center">Ante cualquier consulta podes contactarme al correo electronico mamapacha@gmail.com 
+            o enviar un whatsapp al +54-154xxxxxx</p>
+        <div class= "row">
+            <div class="col-6">
+              <form action="#">
+                  <div class="form-group">
+                      <label for="">Nombre</label>
+                      <input type="text" class="form-control"  placeholder="Escribe tu nombre aqui">
+                  </div>
+                  <div class="form-group">
+                      <label for="">E-mail</label>
+                       <input type="e-mail" class="form-control"  placeholder="Escribe tu e-mail aqui">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Comentarios</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Escribe aqui tus comentarios</textarea>
+                  </div>
+
+                  <div class="form-group">
+                      <button class="btn btn-primary mb-5 border-0" style="background:#91BC52">Enviar</button>
+                  </div>
                 </div>
             </div>
        </section>
