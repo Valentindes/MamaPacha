@@ -1,4 +1,9 @@
  /*Barra de navegacion de BS*/
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
  
 .nav-link{
     color:rgba(250,250,250,0.8);
